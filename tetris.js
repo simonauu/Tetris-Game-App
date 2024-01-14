@@ -79,10 +79,10 @@ function arenaSweep(){
         // handle level ups
         if(player.lines >= 5 && player.level == 1){
             levelUp()
-        } else if(player.lines >= 10 && player.level == 2){
+        } else if(player.lines >= 10 && player.level == 80){
             levelUp()
-        } else if(player.lines >= 20 && player.level == 3){
-            levelUp()
+        } else if(player.lines >= 20 && player.level == 90){
+            levelUp()/*
         } else if(player.lines >= 40 && player.level == 4){
             levelUp()
         } else if(player.lines >= 80 && player.level == 5){
@@ -92,7 +92,7 @@ function arenaSweep(){
         } else if(player.lines >= 320 && player.level == 7){
             levelUp()
         } else if(player.lines >= 640 && player.level == 8){
-            levelUp()
+            levelUp()*/
         } else {
             sweepSound.pause()
             sweepSound.currentTime = 0;
@@ -126,7 +126,7 @@ const pieces = 'ILJOTSZ'
 
 function createPiece(type){
     switch (type){
-        case "T":
+/*        case "T":
             return [
                 [0, 0, 0],
                 [1, 1, 1],
@@ -148,7 +148,7 @@ function createPiece(type){
                 [0, 4, 0],
                 [0, 4, 0],
                 [4, 4, 0],
-            ]
+            ]   */
         
         case "I":
             return [
@@ -156,8 +156,24 @@ function createPiece(type){
                 [0, 5, 0, 0],
                 [0, 5, 0, 0],
                 [0, 5, 0, 0],
+                [0, 5, 0, 0],
+                [0, 5, 0, 0],
+                [0, 5, 0, 0],
+                [0, 5, 0, 0],
+                [0, 5, 0, 0],
+                [0, 5, 0, 0],
+                [0, 5, 0, 0],
+                [0, 5, 0, 0],
+                [0, 5, 0, 0],
+                [0, 5, 0, 0],
+                [0, 5, 0, 0],
+                [0, 5, 0, 0],
+                [0, 5, 0, 0],
+                [0, 5, 0, 0],
+                [0, 5, 0, 0],
+                
             ]
-        case "S":
+/*        case "S":
             return [
                 [0, 6, 6],
                 [6, 6, 0],
@@ -168,7 +184,7 @@ function createPiece(type){
                 [7, 7, 0],
                 [0, 7, 7],
                 [0, 0, 0],
-            ]
+            ]   */
         default:
     }
 }
